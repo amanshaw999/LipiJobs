@@ -1,17 +1,31 @@
+:root {
+  --primary-color: #161458;
+  --secondary-color: #ffffff;
+
+  --black-color: #000000;
+
+  --primary-bgColor: #faf9f9;
+  --secondary-bgColor: #00c385;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 .main-flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.text-decoration {
+  text-decoration: none;
 }
 
 .primary-btn {
@@ -20,12 +34,12 @@ body {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 4px;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 146.523%; /* 26.374px */
-  background-color: #161458;
+  background-color: var(--primary-color);
   box-shadow: 0px 15px 26px 0px rgba(0, 0, 0, 0.03);
   border: none;
 }
@@ -36,21 +50,25 @@ body {
   gap: 10px;
   flex-shrink: 0;
   border-radius: 4px;
-  color: #fff;
+  color: var(--secondary-color);
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
   line-height: 146.523%; /* 26.374px */
-  background-color: #00c385;
+  background-color: var(--secondary-bgColor);
   box-shadow: 0px 15px 26px 0px rgba(0, 0, 0, 0.03);
   border: none;
 }
 
 /* header section header section header section header section header section header section header section header section header section header section header section header section  */
-.header-main > img {
+.header-main > a > img {
   width: 146.978px;
   height: 48px;
   flex-shrink: 0;
+}
+
+.header-main > .header-login-section > a {
+  color: var(--primary-color);
 }
 
 .header-main > .header-login-section {
@@ -59,7 +77,6 @@ body {
   align-items: center;
   gap: 38px;
   flex-shrink: 0;
-  color: #161458;
   text-align: center;
   font-size: 20px;
   font-style: normal;
@@ -69,21 +86,24 @@ body {
 
 /* Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  */
 main > .hero-section {
-  background-color: #faf9f9;
+  background-color: var(--primary-bgColor);
   padding: 4rem 0rem;
+}
+
+.container > .hero-container {
+  position: relative;
 }
 
 .hero-container > .hero-sideMainImg {
   width: 45%;
   flex-shrink: 0;
-  position: relative;
 }
 
 .hero-container > .hero-sideTopImg {
   position: absolute;
-  right: 42%;
+  left: 640px;
   z-index: 2;
-  top: 11%;
+  top: -50px;
   width: 155px;
   height: 155px;
 }
@@ -98,7 +118,7 @@ main > .hero-section {
   display: flex;
   font-family: "Plus Jakarta Sans", sans-serif;
   flex-direction: column;
-  color: #161458;
+  color: var(--primary-color);
   font-size: 52px;
   font-style: normal;
   font-weight: 400;
@@ -118,6 +138,7 @@ main > .hero-section {
 
 .hero-heading-bottom-section > .download-button {
   gap: 1.5rem;
+  position: relative;
 }
 
 .hero-heading-bottom-section > p {
@@ -144,7 +165,7 @@ main > .popular-section {
 }
 
 .popular-container > h2 {
-  color: #161458;
+  color: var(--primary-color);
   font-family: "Plus Jakarta Sans";
   font-size: 40px;
   font-style: normal;
@@ -160,8 +181,8 @@ main > .popular-section {
   flex-wrap: wrap;
 }
 
-.popular-search-container > p {
-  color: #161458;
+.popular-search-container > a > p {
+  color: var(--primary-color);
   text-align: center;
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
@@ -251,7 +272,7 @@ main > .secure-section {
 }
 
 .secure-option-card > .secure-card-info > p {
-  color: #161458;
+  color: var(--primary-color);
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Plus Jakarta Sans";
   font-size: 24px;
@@ -261,7 +282,7 @@ main > .secure-section {
 }
 
 .secure-option-card > .secure-card-info > p > span {
-  color: #161458;
+  color: var(--primary-color);
   font-feature-settings: "clig" off, "liga" off;
   font-family: "Plus Jakarta Sans";
   font-size: 24px;
@@ -273,7 +294,7 @@ main > .secure-section {
 /* Feature section  Feature section  Feature section  Feature section  Feature section  Feature section  Feature section  Feature section   */
 
 main > .feature-section {
-  background-color: #faf9f9;
+  background-color: var(--primary-bgColor);
   padding: 4rem 0rem;
   width: 100%;
 }
@@ -288,9 +309,7 @@ main > .feature-section {
   width: 100%;
   justify-content: center;
   flex-direction: column;
-  gap: 2rem;
-  position: relative;
-  height: 90vh;
+  gap: 5rem;
 }
 
 .feature-container > .feature-card-container {
@@ -301,43 +320,10 @@ main > .feature-section {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  height: 600px;
   border-radius: 30px;
-  background: #fff;
+  background: var(--secondary-color);
   box-shadow: 0px 0px 67.29px 0px rgba(0, 0, 0, 0.12);
-}
-
-.feature-container > .feature-card1-alingment {
-  position: absolute;
-  top: 15%;
-  z-index: 10;
-}
-
-.feature-container > .feature-card2-alingment {
-  width: 90%;
-  position: absolute;
-  z-index: 8;
-  top: 12%;
-}
-
-.feature-container > .feature-card3-alingment {
-  position: absolute;
-  width: 80%;
-  top: 9%;
-  z-index: 6;
-}
-
-.feature-container > .feature-card4-alingment {
-  position: absolute;
-  top: 6%;
-  z-index: 4;
-  width: 70%;
-}
-
-.feature-container > .feature-card5-alingment {
-  position: absolute;
-  top: 3%;
-  width: 60%;
-  z-index: 2;
 }
 
 .feature-card-container > .feature-card {
@@ -352,7 +338,7 @@ main > .feature-section {
 }
 
 .feature-card > .feature-card-left > h2 {
-  color: #161458;
+  color: var(--primary-color);
   font-family: "Plus Jakarta Sans";
   font-size: 40px;
   font-style: normal;
@@ -374,6 +360,10 @@ main > .feature-section {
   flex-direction: column;
   gap: 2.4rem;
   align-items: start;
+}
+
+.feature-card-left > .main-flex > a {
+  text-decoration: none;
 }
 
 .feature-card-left > div > .feature-card-point-container {
@@ -468,7 +458,7 @@ main > .feature-section {
 .earn-card > .earn-card-sideline1 {
   width: 1%;
   height: 140px;
-  background-color: #00c385;
+  background-color: var(--secondary-bgColor);
 }
 
 .earn-card > .earn-card-sideline {
@@ -483,7 +473,7 @@ main > .feature-section {
 }
 
 .earn-card > .earn-card-info > h3 {
-  color: #161458;
+  color: var(--primary-color);
   font-family: "Plus Jakarta Sans";
   font-size: 28px;
   font-style: normal;
@@ -506,4 +496,323 @@ main > .feature-section {
 
 .earn-section-main > .earn-section-right > img {
   width: 90%;
+}
+
+/* Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section  */
+
+.Reviews-section {
+  width: 100%;
+  background-color: var(--primary-color);
+  height: 90vh;
+  overflow-y: hidden;
+}
+
+.Reviews-section > .container {
+  width: 100%;
+  height: 100%;
+}
+
+.container > .reviews-container {
+  width: 100%;
+}
+
+.reviews-container > .reviews-section-left {
+  width: 45%;
+}
+
+.reviews-container > .reviews-section-left > .main-flex {
+  flex-direction: column;
+  width: 100%;
+  align-items: start;
+}
+
+.reviews-section-left > .main-flex > h1 {
+  color: var(--secondary-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.reviews-section-left > .main-flex > h1 > span {
+  color: var(--secondary-bgColor);
+  font-family: "DM Sans";
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.reviews-section-left > .main-flex > img {
+  width: 40%;
+}
+
+.reviews-container > .reviews-section-right {
+  width: 50%;
+}
+
+.reviews-section-right > .review-card-containers {
+  width: 100%;
+}
+
+.review-card-containers > .review-card-column {
+  width: 50%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.review-card-column > .reviews-card {
+  background-color: var(--secondary-color);
+  padding: 1rem 1.2rem 0 1.2rem;
+  width: 88%;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.reviews-card > h3 {
+  color: var(--primary-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.reviews-card > img {
+  width: 60%;
+}
+
+.reviews-card > p {
+  color: var(--black-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* Refer Section  Refer Section  Refer Section  
+Refer Section  Refer Section  Refer Section  
+Refer Section  Refer Section  Refer Section  */
+
+.Refer-section {
+  width: 100%;
+}
+
+.Refer-section > .container {
+  width: 100%;
+  height: 80%;
+  padding: 0 0 10rem 0;
+}
+
+.Refer-section > .container > .refer-container {
+  width: 100%;
+  height: 100%;
+}
+
+.refer-container > .refer-section-left {
+  width: 50%;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 8rem 0 0 0;
+}
+
+.refer-container > .refer-section-left > a > button {
+  color: var(--secondary-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.refer-section-left > .refer-section-heading > h3 {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.refer-section-left > .refer-section-heading > h3 > span {
+  color: var(--primary-color);
+  font-family: "Square Peg";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 146.523%;
+}
+
+.refer-section-left > .refer-section-heading {
+  position: relative;
+}
+
+.refer-section-left > .refer-section-heading > img {
+  position: absolute;
+  right: 1%;
+  width: 35%;
+  bottom: 2%;
+}
+
+.refer-section-left > .refer-section-midContent {
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.refer-section-left > .refer-section-midContent > h4 {
+  color: #161458;
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%;
+}
+
+.refer-section-left > .refer-section-midContent > ul {
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.refer-section-left > .refer-section-midContent > ul > li {
+  color: #625df5;
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.refer-container > .refer-section-right {
+  width: 50%;
+  height: 100%;
+  align-items: start;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.refer-container > .refer-section-right > .refer-main-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.refer-section-right > .refer-main-img > .refer-right-blueBG {
+  width: 70%;
+  position: absolute;
+  top: -50px;
+  left: 150px;
+}
+
+.refer-section-right > .refer-main-img > .refer-right-sectionImg {
+  width: 45%;
+  position: absolute;
+  top: -120px;
+  left: 230px;
+}
+
+.refer-section-right > .refer-currency-img {
+  position: relative;
+}
+
+.refer-currency-img > .refer-section-rupeeImg {
+  padding: 0.5rem;
+  position: absolute;
+  border-radius: 50%;
+  width: 60px;
+  left: 495px;
+  top: -15px;
+  background-color: #d299ff;
+}
+
+.refer-currency-img > .refer-section-noteImg {
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  top: 100px;
+  left: 187px;
+  background-color: #00c385;
+}
+
+.refer-currency-img > .refer-section-walletImg {
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  width: 60px;
+  top: 205px;
+  left: 503px;
+  background-color: #febd9d;
+}
+
+/* Employers Zone   Employers Zone  Employers Zone  Employers Zone  Employers Zone  Employers Zone  Employers Zone  Employers Zone  Employers Zone  */
+
+.Employers-section {
+  width: 100%;
+  background-color: #ffe6d9;
+}
+
+.Employers-section > .container {
+  width: 100%;
+}
+
+.Employers-section > .container > .employe-container {
+  width: 100%;
+}
+
+.employe-container > .employe-section-left {
+  width: 50%;
+  padding: 3rem 0 0 0;
+  justify-content: start;
+}
+
+.employe-container > .employe-section-left > img {
+  width: 50%;
+}
+
+.employe-container > .employe-section-right {
+  width: 40%;
+  gap: 2rem;
+  align-items: start;
+  flex-direction: column;
+}
+
+.employe-container > .employe-section-right > h3 {
+  color: #2254b5;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%; /* 64px */
+}
+
+.employe-container > .employe-section-right > h4 {
+  color: var(--primary-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 72px; /* 144% */
+  text-transform: capitalize;
+}
+
+.employe-container > .employe-section-right > p {
+  color: #4f4f4f;
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 40px; /* 142.857% */
+}
+
+.employe-container > .employe-section-right > a > button {
+  font-size: 24px;
 }
