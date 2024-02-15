@@ -6,6 +6,8 @@
 
   --primary-bgColor: #faf9f9;
   --secondary-bgColor: #00c385;
+
+  --footer-primary-color: #e2e2e2;
 }
 
 * {
@@ -815,4 +817,348 @@ Refer Section  Refer Section  Refer Section  */
 
 .employe-container > .employe-section-right > a > button {
   font-size: 24px;
+}
+
+/* Media Section  Media Section  Media Section  Media Section  Media Section  Media Section  Media Section  Media Section  Media Section  Media Section  Media Section  Media Section   */
+
+.Media-section {
+  width: 100%;
+}
+
+.Media-section > .container {
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+}
+
+.Media-section > .container > .media-container {
+  width: 100%;
+  gap: 4rem;
+  flex-direction: column;
+}
+
+.Media-section > .container > .media-container > .media-heading {
+  width: 100%;
+  position: relative;
+}
+
+.media-container > .media-heading > h2 {
+  color: var(--primary-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 120% */
+  text-transform: capitalize;
+}
+
+.media-container > .media-heading > .media-slider-arrow {
+  width: 10%;
+  position: relative;
+}
+
+.media-heading > .media-slider-arrow > .swiper-button-next {
+  position: absolute;
+  right: 0px;
+  color: var(--primary-color);
+}
+
+.media-heading > .media-slider-arrow > .swiper-button-prev {
+  position: absolute;
+  color: var(--primary-color);
+  left: 0;
+}
+
+.media-container > .media-slider {
+  width: 100%;
+  height: 50vh;
+}
+
+.media-container > .media-slider > .swiper {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-slider > .swiper > .swiper-wrapper {
+  height: 85%;
+  width: 100%;
+}
+
+.swiper > .swiper-wrapper > .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper > .swiper-wrapper > .swiper-slide > div {
+  width: 100%;
+  height: 100%;
+}
+
+.media-slider > .swiper > .swiper-wrapper > .swiper-slide > div > img {
+  width: 50%;
+  height: 100%;
+}
+
+.swiper-wrapper > .swiper-slide > div > .media-slider-content {
+  width: 45%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  height: 100%;
+  gap: 2rem;
+}
+
+.swiper-slide > div > .media-slider-content > h3 {
+  overflow: hidden;
+  width: 100%;
+  padding: 0 1rem 0 0;
+  color: #1e1e23;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+
+.swiper-slide > div > .media-slider-content > p {
+  overflow: hidden;
+  color: #1e1e23;
+  width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 28.8px */
+}
+
+.swiper-slide > div > .media-slider-content > .media-slider-date {
+  width: 90%;
+}
+
+.swiper-slide > div > .media-slider-content > .media-slider-date > p {
+  color: #1e1e23;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.swiper-slide > div > .media-slider-content > a {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 32px */
+  text-decoration-line: underline;
+}
+
+/* Download Section  Download Section  Download Section  Download Section  Download Section  Download Section  Download Section  Download Section  Download Section  Download Section   */
+
+.Download-section {
+  width: 100%;
+  padding: 3rem 0 0 0;
+  height: 60vh;
+}
+
+.Download-section > .container {
+  width: 100%;
+  height: 100%;
+}
+
+.Download-section > .container > .download-container {
+  width: 100%;
+  height: 100%;
+}
+
+.download-container > .download-section-left {
+  width: 40%;
+  flex-direction: column;
+  align-items: start;
+  gap: 4rem;
+}
+
+.download-container > .download-section-left > h2 {
+  color: var(--primary-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 72px; /* 144% */
+  text-transform: capitalize;
+}
+
+.download-container > .download-section-left > .download-button {
+  gap: 2rem;
+}
+
+.download-container > .download-section-left > h2 > span {
+  color: var(--primary-color);
+  font-feature-settings: "clig" off, "liga" off;
+  font-family: "Plus Jakarta Sans";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90px;
+  text-transform: capitalize;
+}
+
+.download-container > .download-section-right {
+  width: 40%;
+  height: 100%;
+  padding: 0 0 1rem 0;
+  position: relative;
+}
+
+.download-container > .download-section-right > .download-right-section-glowBg {
+  width: 765.035px;
+  height: 594.583px;
+  filter: blur(30px);
+  transform: rotate(90deg);
+  flex-shrink: 0;
+  position: absolute;
+  left: -200px;
+  bottom: 0;
+  border-radius: 765.035px;
+  z-index: -1;
+  background: linear-gradient(
+    287deg,
+    #d7e2f0 17.64%,
+    rgba(221, 229, 238, 0.32) 98.61%
+  );
+}
+
+.download-container > .download-section-right > img {
+  width: 70%;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   */
+
+.Footer-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+
+.Footer-section > .container {
+  width: 100%;
+  height: 100%;
+}
+
+.Footer-section > .container > .footer-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.footer-container > .footer-row {
+  height: 50%;
+  width: 100%;
+  align-items: start;
+  padding: 10rem 0 0 0;
+}
+
+.footer-container > .footer-row > .footer-company-details {
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+  gap: 1rem;
+}
+
+.footer-row > .footer-company-details > img {
+  width: 80%;
+}
+
+.footer-row > .footer-company-details > p {
+  color: var(--footer-primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.footer-row > .footer-company-details > .footer-contactNumber {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-company-details > .footer-social-icon {
+  width: 35%;
+}
+
+.footer-company-details > .footer-social-icon > a > img {
+  width: 32px;
+}
+
+.footer-row > .footer-subSection {
+  width: 20%;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-row > .footer-subSection > h4 {
+  color: var(--footer-primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.footer-row > .footer-subSection > p {
+  width: 100%;
+  height: 2px;
+  background-color: #555;
+}
+
+.footer-bottom-section > .footer-subSection > p {
+  width: 40%;
+  height: 2px;
+  background-color: var(--secondary-bgColor);
+}
+
+.footer-row > .footer-subSection > p > span {
+  width: 40%;
+
+  background-color: var(--secondary-bgColor);
+  height: 10px;
+}
+
+.footer-row > .footer-subSection > div {
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.footer-row > .footer-subSection > div > a > li {
+  list-style: none;
+  color: var(--footer-primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-row > .footer-subSection > div > a > li :hover {
+  color: var(--primary-color);
 }
