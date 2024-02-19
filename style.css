@@ -63,6 +63,16 @@
 }
 
 /* header section header section header section header section header section header section header section header section header section header section header section header section  */
+.Header-section {
+  width: 100%;
+  z-index: 10;
+  background-color: var(--secondary-color);
+}
+
+.Header-section > .container {
+  width: 100%;
+}
+
 .header-main > a > img {
   width: 146.978px;
   height: 48px;
@@ -89,25 +99,12 @@
 /* Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  Hero section  */
 main > .hero-section {
   background-color: var(--primary-bgColor);
-  padding: 4rem 0rem;
-}
-
-.container > .hero-container {
-  position: relative;
+  padding: 5rem 0rem;
 }
 
 .hero-container > .hero-sideMainImg {
   width: 45%;
   flex-shrink: 0;
-}
-
-.hero-container > .hero-sideTopImg {
-  position: absolute;
-  left: 640px;
-  z-index: 2;
-  top: -50px;
-  width: 155px;
-  height: 155px;
 }
 
 .hero-left-section {
@@ -151,6 +148,34 @@ main > .hero-section {
   font-style: normal;
   font-weight: 400;
   line-height: 160%;
+}
+
+.Hero-section-slider {
+  width: 50%;
+  height: 400px;
+  position: relative;
+  justify-content: center;
+}
+
+.Hero-section-slider > .hero-sideTopImg {
+  position: absolute;
+  z-index: 2;
+  left: -60px;
+  top: -100px;
+  width: 125px;
+  height: 125px;
+}
+
+.Hero-section-slider > .center {
+  width: 100%;
+  height: 100%;
+}
+
+.center > .img-section {
+  width: 100%;
+  height: 100%;
+  background-color: #161458;
+  color: var(--footer-primary-color);
 }
 
 /* Popular Section Popular Section Popular Section Popular Section Popular Section Popular Section Popular Section Popular Section Popular Section */
@@ -446,6 +471,7 @@ main > .feature-section {
 
 .earn-container > .earn-section-main {
   width: 100%;
+  gap: 2rem;
 }
 
 .earn-section-main > .earn-section-left {
@@ -494,10 +520,25 @@ main > .feature-section {
 
 .earn-section-main > .earn-section-right {
   width: 50%;
+  justify-content: end;
 }
 
-.earn-section-main > .earn-section-right > img {
-  width: 90%;
+.earn-section-slider {
+  width: 100%;
+  height: 500px;
+  justify-content: end;
+}
+
+.earn-section-slider > .Earn {
+  width: 100%;
+  height: 100%;
+}
+
+.Earn > .img-section {
+  width: 100%;
+  height: 100%;
+  background-color: #161458;
+  color: var(--footer-primary-color);
 }
 
 /* Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section   Reviews Section  */
@@ -516,6 +557,7 @@ main > .feature-section {
 
 .container > .reviews-container {
   width: 100%;
+  height: 100%;
 }
 
 .reviews-container > .reviews-section-left {
@@ -551,10 +593,38 @@ main > .feature-section {
 
 .reviews-container > .reviews-section-right {
   width: 50%;
+  height: 100%;
+  justify-content: center;
 }
 
 .reviews-section-right > .review-card-containers {
   width: 100%;
+}
+
+.reviews-section-right > .review-card-containers > .review-card-column {
+  width: 100%;
+  color: var(--secondary-color);
+}
+
+.review-card-containers > .review-card-column {
+  height: 100%;
+  padding: 1rem 1.2rem 0 1.2rem;
+  width: 100%;
+  gap: 1rem;
+}
+
+.review-card-containers > .review-card-column .item {
+  height: 100%;
+  width: 100%;
+}
+
+.review-card-containers .review-card-column .item .reviews-card {
+  background-color: var(--secondary-color);
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  flex-direction: column;
 }
 
 .review-card-containers > .review-card-column {
@@ -563,7 +633,7 @@ main > .feature-section {
   gap: 2rem;
 }
 
-.review-card-column > .reviews-card {
+.review-card-column .reviews-card {
   background-color: var(--secondary-color);
   padding: 1rem 1.2rem 0 1.2rem;
   width: 88%;
@@ -964,8 +1034,8 @@ Refer Section  Refer Section  Refer Section  */
 
 .Download-section {
   width: 100%;
-  padding: 3rem 0 0 0;
-  height: 60vh;
+  padding: 5rem 0 0rem 0;
+  /* height: 6/0vh; */
 }
 
 .Download-section > .container {
@@ -1038,8 +1108,6 @@ Refer Section  Refer Section  Refer Section  */
 
 .download-container > .download-section-right > img {
   width: 70%;
-  position: absolute;
-  bottom: 0;
 }
 
 /* Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   */
@@ -1053,6 +1121,8 @@ Refer Section  Refer Section  Refer Section  */
 .Footer-section > .container {
   width: 100%;
   height: 100%;
+  flex-direction: column;
+  padding-top: 5rem;
 }
 
 .Footer-section > .container > .footer-container {
@@ -1061,11 +1131,24 @@ Refer Section  Refer Section  Refer Section  */
   flex-direction: column;
 }
 
+.Footer-section > .container > .footer-copyRight {
+  flex-direction: column;
+  width: 100%;
+}
+
+.Footer-section > .container > .footer-copyRight > hr {
+  width: 100%;
+  color: var(--footer-primary-color);
+}
+
+.Footer-section > .container > .footer-copyRight > p {
+  color: var(--footer-primary-color);
+}
+
 .footer-container > .footer-row {
   height: 50%;
   width: 100%;
   align-items: start;
-  padding: 10rem 0 0 0;
 }
 
 .footer-container > .footer-row > .footer-company-details {
@@ -1126,6 +1209,7 @@ Refer Section  Refer Section  Refer Section  */
   width: 100%;
   height: 2px;
   background-color: #555;
+  position: relative;
 }
 
 .footer-bottom-section > .footer-subSection > p {
@@ -1135,10 +1219,11 @@ Refer Section  Refer Section  Refer Section  */
 }
 
 .footer-row > .footer-subSection > p > span {
-  width: 40%;
-
+  display: block;
+  width: 36%;
+  height: 100%;
+  position: absolute;
   background-color: var(--secondary-bgColor);
-  height: 10px;
 }
 
 .footer-row > .footer-subSection > div {

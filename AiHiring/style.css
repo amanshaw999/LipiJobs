@@ -1,0 +1,633 @@
+:root {
+  --primary-color: #161458;
+  --secondary-color: #ffffff;
+
+  --black-color: #000000;
+
+  --primary-bgColor: #faf9f9;
+  --secondary-bgColor: #eb996e;
+
+  --footer-primary-color: #e2e2e2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-decoration {
+  text-decoration: none;
+}
+
+.primary-btn {
+  height: 50px;
+  padding: 23px 38px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 146.523%; /* 26.374px */
+  background-color: var(--primary-color);
+  box-shadow: 0px 15px 26px 0px rgba(0, 0, 0, 0.03);
+  border: none;
+}
+
+.secondary-btn {
+  padding: 0.8rem 4rem;
+  height: 50px;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  color: var(--secondary-color);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 146.523%; /* 26.374px */
+  background-color: var(--secondary-bgColor);
+  box-shadow: 0px 15px 26px 0px rgba(0, 0, 0, 0.03);
+  border: none;
+}
+
+/* header section header section header section header section header section header section header section header section header section header section header section header section  */
+
+header {
+  background-color: var(--primary-bgColor);
+}
+
+.header-main > a > img {
+  width: 187.978px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.header-main > .header-login-section > a {
+  color: var(--primary-color);
+}
+
+.header-main > .header-login-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 38px;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+/* Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   Hero Section   */
+
+.Hero-Section {
+  width: 100%;
+  background-color: var(--primary-bgColor);
+}
+
+.Hero-Section > .container {
+  width: 100%;
+}
+
+.Hero-Section > .container > .hero-container {
+  width: 100%;
+  padding: 3rem 0 3rem 0;
+}
+
+.hero-container > .hero-section-left {
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+  position: relative;
+}
+
+.hero-container > .hero-section-left > img {
+  position: absolute;
+  top: 100px;
+  width: 25%;
+  left: 40px;
+}
+
+.hero-container > .hero-section-left > h1 {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 115px;
+}
+
+.hero-container > .hero-section-left > h1 > span {
+  font-weight: 700;
+}
+
+.hero-container > .hero-section-left > p {
+  color: #1d1d1d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.hero-container > .hero-section-right {
+  width: 50%;
+  justify-content: end;
+  padding: 0 1rem 0 0;
+}
+
+.hero-container > .hero-section-right > .hero-section-right-content {
+  width: 70%;
+  gap: 1rem;
+  flex-direction: column;
+  background-color: var(--secondary-color);
+  padding: 5rem 0;
+}
+
+.hero-section-right > .hero-section-right-content > h2 {
+  color: #1d1d1d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 64px;
+  width: 50%;
+  text-align: center;
+}
+
+.hero-section-right > .hero-section-right-content > h2 > span {
+  font-weight: 700;
+}
+
+.hero-section-right > .hero-section-right-content > div {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.hero-section-right > .hero-section-right-content > div > p {
+  color: #1d1d1d;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+}
+
+/* Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section  Hiring Section   */
+
+.Hiring-section {
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--primary-bgColor);
+}
+
+.Hiring-section > .container {
+  width: 100%;
+}
+
+.Hiring-section > .container > .hiring-container {
+  width: 100%;
+  gap: 2rem;
+  flex-direction: column;
+}
+
+.container > .hiring-container > .hiring-heading-section {
+  width: 70%;
+  padding: 0 2rem;
+  flex-direction: column;
+}
+
+.hiring-container > .hiring-heading-section > p {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.hiring-container > .hiring-heading-section > h2 {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.hiring-container > .hiring-heading-section > h2 > span {
+  color: var(--secondary-bgColor);
+  font-weight: 700;
+}
+
+.container > .hiring-container > .hiring-card-container {
+  gap: 2rem;
+  width: 100%;
+}
+
+.hiring-container > .hiring-card-container > .hiring-card {
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.hiring-card-container > .hiring-card-1 {
+  background-color: #966eeb;
+}
+
+.hiring-card-container > .hiring-card-2 {
+  background-color: var(--primary-color);
+}
+
+.hiring-card-container > .hiring-card-3 {
+  background-color: #f59753;
+}
+
+.hiring-card-container > .hiring-card > img {
+  width: 50px;
+}
+
+.hiring-card-container > .hiring-card > h4 {
+  color: var(--secondary-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.hiring-card-container > .hiring-card > div {
+  width: 100%;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.hiring-card > div > a > p {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  padding: 0.5rem 1rem;
+  gap: 10px;
+  border-radius: 10px;
+  background: #f3f8ff;
+}
+
+/* Comprehensive Solution   Comprehensive Solution   Comprehensive Solution   Comprehensive Solution   Comprehensive Solution   Comprehensive Solution   Comprehensive Solution   Comprehensive Solution   Comprehensive Solution   Comprehensive Solution    */
+
+.Comprehensive-section {
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+  background-color: var(--primary-bgColor);
+}
+
+.Comprehensive-section > .container {
+  width: 100%;
+}
+
+.Comprehensive-section > .container > .Comprehensive-container {
+  width: 100%;
+  flex-direction: column;
+}
+
+.Comprehensive-container > .Comprehensive-heading {
+  flex-direction: column;
+}
+
+.Comprehensive-container > .Comprehensive-heading > h2 {
+  color: var(--secondary-bgColor);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.Comprehensive-container > .Comprehensive-heading > h2 > span {
+  color: var(--primary-color);
+}
+
+.Comprehensive-container > .Comprehensive-heading > p {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+}
+
+.Comprehensive-container > .Comprehensive-video {
+  width: 70%;
+  padding: 0.7rem;
+  border-radius: 12px;
+  justify-content: center;
+  background-color: #efefef;
+}
+
+.Comprehensive-container > .Comprehensive-video > iframe {
+  width: 100%;
+  border-radius: 15px;
+  justify-content: center;
+  background-color: #966eeb;
+}
+
+/* Our Feature Section   Our Feature Section   Our Feature Section   Our Feature Section   Our Feature Section   Our Feature Section   Our Feature Section   Our Feature Section   Our Feature Section   Our Feature Section   */
+
+main > .feature-section {
+  background-color: var(--primary-bgColor);
+  padding: 4rem 0rem;
+  width: 100%;
+}
+
+.feature-section > .container {
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem 0 1rem 0;
+  gap: 5rem;
+}
+
+.feature-section > .container > .feature-heading {
+  flex-direction: column;
+}
+
+.feature-section > .container > .feature-heading > p {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.feature-section > .container > .feature-heading > h3 {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  text-align: center;
+}
+
+.container > .feature-container {
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.feature-container > .feature-card-container {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 5rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  height: 600px;
+  border-radius: 30px;
+  background: var(--secondary-color);
+  box-shadow: 0px 0px 67.29px 0px rgba(0, 0, 0, 0.12);
+}
+
+.feature-card-container > .feature-card {
+  width: 100%;
+}
+
+.feature-card > .feature-card-left {
+  width: 46%;
+  gap: 1rem;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.feature-card > .feature-card-left > .feature-card-number {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  color: #b9b9d2;
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--footer-primary-color);
+}
+
+.feature-card > .feature-card-left > .feature-card-content {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.feature-card > .feature-card-left > .feature-card-content > h2 {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+}
+
+.feature-card > .feature-card-left > .feature-card-content > p {
+  color: var(--primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+}
+
+.feature-card-left > div {
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: start;
+}
+
+.feature-card-left > .main-flex > a {
+  text-decoration: none;
+}
+
+.feature-card-left > div > .feature-card-point-container {
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.feature-card-point-container > .feature-card-point {
+  justify-content: start;
+  gap: 1rem;
+}
+
+.feature-card-point-container > .feature-card-point > img {
+  width: 1.5rem;
+}
+
+.feature-card-point-container > .feature-card-point > p {
+  color: #625df5;
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.8px;
+  margin-bottom: 0;
+}
+
+.feature-card > .feature-card-right {
+  width: 50%;
+  justify-content: end;
+}
+
+.feature-card > .feature-card-right > img {
+  width: 90%;
+}
+
+.feature-card > .feature-card-right-card-4 {
+  position: relative;
+}
+
+.feature-card > .feature-card-right-card-4 > .card-4-img1 {
+  width: 75px;
+  position: absolute;
+  left: 40px;
+  bottom: -30px;
+}
+
+.feature-card > .feature-card-right-card-4 > .card-4-img2 {
+  width: 75px;
+  position: absolute;
+  right: 110px;
+  bottom: 10px;
+}
+
+.feature-card > .feature-card-right-card-5 {
+  position: relative;
+}
+
+.feature-card > .feature-card-right-card-5 > .card-5-img1 {
+  width: 150px;
+  position: absolute;
+  right: 50px;
+  top: 0px;
+}
+
+.feature-card > .feature-card-right-card-5 > .card-5-img2 {
+  width: 150px;
+  position: absolute;
+  right: 180px;
+  bottom: -40px;
+}
+
+.feature-card > .feature-card-right-card-5 > .card-5-img3 {
+  width: 150px;
+  position: absolute;
+  right: -60px;
+  bottom: 40px;
+}
+
+.feature-card > .feature-card-right-card-6 {
+  position: relative;
+}
+
+.feature-card > .feature-card-right-card-6 > .card-6-img1 {
+  width: 180px;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+
+.feature-card > .feature-card-right-card-6 > div {
+  background-color: #161458ac;
+  padding: 1rem;
+  border-radius: 12px;
+  position: absolute;
+  right: 230px;
+  top: 160px;
+}
+
+.feature-card > .feature-card-right-card-6 > div > .card-6-img2 {
+  width: 30px;
+}
+
+.feature-card > .feature-card-right-card-7 {
+  position: relative;
+}
+
+.feature-card > .feature-card-right-card-7 > .card-7-mainImg {
+  z-index: 2;
+}
+
+.feature-card > .feature-card-right-card-7 > .card-7-img1 {
+  width: 210px;
+  position: absolute;
+  right: -25px;
+  top: -130px;
+  z-index: 3;
+}
+
+.feature-card > .feature-card-right-card-7 > .card-7-img2 {
+  width: 100px;
+  position: absolute;
+  right: -45px;
+  bottom: -50px;
+  z-index: 3;
+}
+
+.feature-card > .feature-card-right-card-7 > .card-7-img3 {
+  width: 85%;
+  height: 300px;
+  z-index: 1;
+  position: absolute;
+  bottom: 10px;
+}
+
+.feature-card > .feature-card-right-card-8 {
+  position: relative;
+}
+
+.feature-card > .feature-card-right-card-8 > .card-8-img1 {
+  width: 180px;
+  position: absolute;
+  left: 20px;
+  bottom: 30px;
+}
+
+.feature-card > .feature-card-right-card-8 > div {
+  background-color: #625df5;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  right: -50px;
+  top: -50px;
+}
+
+.feature-card > .feature-card-right-card-8 > div > .card-8-img1 {
+  width: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
