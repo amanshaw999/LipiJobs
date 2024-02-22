@@ -8,6 +8,7 @@
   --secondary-bgColor: #eb996e;
 
   --footer-primary-color: #e2e2e2;
+  --footer-secondary-color: #00c385;
 }
 
 * {
@@ -36,7 +37,8 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 146.523%; /* 26.374px */
+  line-height: 146.523%;
+  /* 26.374px */
   background-color: var(--primary-color);
   box-shadow: 0px 15px 26px 0px rgba(0, 0, 0, 0.03);
   border: none;
@@ -52,7 +54,8 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 146.523%; /* 26.374px */
+  line-height: 146.523%;
+  /* 26.374px */
   background-color: var(--secondary-bgColor);
   box-shadow: 0px 15px 26px 0px rgba(0, 0, 0, 0.03);
   border: none;
@@ -277,7 +280,8 @@ header {
   font-size: 12px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   padding: 0.5rem 1rem;
   gap: 10px;
   border-radius: 10px;
@@ -483,7 +487,8 @@ main > .feature-section {
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 26px; /* 162.5% */
+  line-height: 26px;
+  /* 162.5% */
   letter-spacing: 0.8px;
   margin-bottom: 0;
 }
@@ -620,14 +625,311 @@ main > .feature-section {
   width: 110px;
 }
 
+/* Recruiter Section   Recruiter Section   Recruiter Section   Recruiter Section   Recruiter Section   Recruiter Section   Recruiter Section   Recruiter Section   Recruiter Section   Recruiter Section  */
+.Recruiter-Section {
+  width: 100%;
+  background-color: #202427;
+  padding: 5rem 0 10rem 0;
+}
 
+.Recruiter-Section > .container {
+  width: 100%;
+}
 
+.Recruiter-Section > .container > .recruiter-container {
+  width: 100%;
+}
 
+.recruiter-container > .recruiter-section-left {
+  width: 45%;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+}
 
+.recruiter-container > .recruiter-section-left > h2 {
+  color: var(--secondary-bgColor);
+  font-family: "Plus Jakarta Sans";
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 72px;
+}
 
+.recruiter-container > .recruiter-section-left > h2 > span {
+  color: var(--secondary-bgColor);
+  font-family: "Plus Jakarta Sans";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 72px;
+}
 
+.recruiter-container > .recruiter-section-left > p {
+  color: var(--secondary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 40px;
+}
 
+.recruiter-container > .recruiter-section-left > p > span {
+  color: var(--secondary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  letter-spacing: 10%;
+}
 
+.recruiter-container > .recruiter-section-left > a > .secondary-btn {
+  padding: 20px 2rem;
+  border-radius: 10px;
+  font-size: 24px;
+  height: 70px;
+  line-height: 30px;
+}
 
+.recruiter-container > .recruiter-section-right {
+  width: 45%;
+  flex-direction: column;
+  position: relative;
+}
 
+.recruiter-container > .recruiter-section-right > .recruiter-profile-card {
+  width: 70%;
+  z-index: 2;
+  padding: 3rem 1rem;
+  align-items: start;
+  border-radius: 25px;
+  background-color: var(--secondary-bgColor);
+  flex-direction: column;
+}
 
+.recruiter-section-right > .recruiter-profile-card > p {
+  /* color: var(--secondary-bgColor); */
+  font-family: "Plus Jakarta Sans";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.recruiter-section-right > .recruiter-profile-card > p > span {
+  font-size: 100px;
+  line-height: 32px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans";
+}
+
+.recruiter-section-right > .recruiter-profile-card > h4 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans";
+}
+
+.recruiter-section-right > .recruiter-profile-card > .recruiter-Hr-subHeader {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans";
+}
+
+.recruiter-section-right > img {
+  position: absolute;
+  width: 40%;
+  bottom: -130px;
+  left: -50px;
+}
+
+/* FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section FAQs Section  */
+
+.FAQ-Section {
+  width: 100%;
+  padding: 5rem 0;
+}
+
+.FAQ-Section > .container {
+  width: 100%;
+}
+
+.FAQ-Section > .container > .FAQ-container {
+  width: 100%;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.FAQ-container > h2 {
+  color: var(--secondary-bgColor);
+  font-size: 40px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: "Plus Jakarta Sans";
+}
+
+.FAQ-container > div {
+  width: 90%;
+  flex-direction: column;
+}
+
+.FAQ-container
+  > div
+  > .accordion
+  > .accordion-item
+  > .accordion-header
+  > .accordion-button {
+  color: var(--black-color);
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  font-family: "Plus Jakarta Sans";
+}
+
+.FAQ-container
+  > div
+  > .accordion
+  > .accordion-item
+  > .accordion-collapse
+  > .accordion-body {
+  color: var(--black-color);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Plus Jakarta Sans";
+}
+
+/* Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   Footer Section   */
+
+.Footer-section {
+  width: 100%;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+
+.Footer-section > .container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  padding-top: 5rem;
+}
+
+.Footer-section > .container > .footer-container {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.Footer-section > .container > .footer-copyRight {
+  flex-direction: column;
+  width: 100%;
+}
+
+.Footer-section > .container > .footer-copyRight > hr {
+  width: 100%;
+  color: var(--footer-primary-color);
+}
+
+.Footer-section > .container > .footer-copyRight > p {
+  color: var(--footer-primary-color);
+}
+
+.footer-container > .footer-row {
+  height: 50%;
+  width: 100%;
+  align-items: start;
+}
+
+.footer-container > .footer-row > .footer-company-details {
+  flex-direction: column;
+  align-items: start;
+  width: 30%;
+  gap: 1rem;
+}
+
+.footer-row > .footer-company-details > img {
+  width: 80%;
+}
+
+.footer-row > .footer-company-details > p {
+  color: var(--footer-primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.footer-row > .footer-company-details > .footer-contactNumber {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-company-details > .footer-social-icon {
+  width: 35%;
+}
+
+.footer-company-details > .footer-social-icon > a > img {
+  width: 32px;
+}
+
+.footer-row > .footer-subSection {
+  width: 20%;
+  flex-direction: column;
+  align-items: start;
+}
+
+.footer-row > .footer-subSection > h4 {
+  color: var(--footer-primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  width: 80%;
+}
+
+.footer-row > .footer-subSection > p {
+  width: 100%;
+  height: 1px;
+  background-color: #555;
+  position: relative;
+}
+
+.footer-bottom-section > .footer-subSection > p {
+  width: 40%;
+  height: 2px;
+  background-color: var(--footer-secondary-color);
+}
+
+.footer-row > .footer-subSection > p > span {
+  display: block;
+  width: 36%;
+  height: 100%;
+  position: absolute;
+  background-color: var(--footer-secondary-color);
+}
+
+.footer-row > .footer-subSection > div {
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.footer-row > .footer-subSection > div > a > li {
+  list-style: none;
+  color: var(--footer-primary-color);
+  font-family: "Plus Jakarta Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 166.667% */
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.footer-row > .footer-subSection > div > a > li :hover {
+  color: var(--primary-color);
+}

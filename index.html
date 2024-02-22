@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>LipiTech Job</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQuery.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -59,21 +60,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <script src="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
-"></script>
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
-"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
     <header class="Header-section sticky-top">
-      <div class="container py-3 px-4">
+      <div class="container main-flex">
         <div class="header-main main-flex">
           <a href="#">
             <img src="/img/logo.png" alt="logo" />
@@ -93,7 +84,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     <main>
       <!-- Hero Section  -->
       <section class="hero-section">
-        <div class="container">
+        <div class="container main-flex">
           <div class="hero-container main-flex">
             <div class="hero-left-section main-flex">
               <div class="hero-heading-section">
@@ -130,44 +121,44 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             </div>
 
             <div class="Hero-section-slider main-flex">
-              <img
-                class="hero-sideTopImg"
-                src="/img/hero-section-sideTopImg.png"
-                alt=""
-              />
+              <div class="hero-sideTopImg main-flex">
+                <p class="main-flex">
+                  <span>India's #1st </span>AI-based JobTech platform
+                </p>
+              </div>
 
               <div class="center main-flex">
                 <div class="img-section">
                   <img
-                    class="w-75"
+                    class="slider-img"
                     id="aman"
                     src="./img/Hero-section-sliderImg1.png"
                   />
                 </div>
-                <div>
+                <div class="img-section">
                   <img
-                    class="w-75"
+                    class="slider-img"
                     id="aman"
                     src="./img/Hero-section-sliderImg1.png"
                   />
                 </div>
-                <div>
+                <div class="img-section">
                   <img
-                    class="w-75"
+                    class="slider-img"
                     id="aman"
                     src="./img/Hero-section-sliderImg1.png"
                   />
                 </div>
-                <div>
+                <div class="img-section">
                   <img
-                    class="w-75"
+                    class="slider-img"
                     id="aman"
                     src="./img/Hero-section-sliderImg1.png"
                   />
                 </div>
-                <div>
+                <div class="img-section">
                   <img
-                    class="w-75"
+                    class="slider-img"
                     id="aman"
                     src="./img/Hero-section-sliderImg1.png"
                   />
@@ -177,6 +168,27 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           </div>
         </div>
       </section>
+
+      <!-- Mobile Hero Section Button -->
+      <div class="Mobile-hero-section main-flex">
+        <div class="header-login-section main-flex">
+          <a href="#" class="text-decoration"> Login/register </a>
+          <a href="#" class="text-decoration">
+            <button class="header-employersZone-Btn main-flex primary-btn">
+              Employers Zone
+            </button>
+          </a>
+        </div>
+        <div class="download-button main-flex">
+          <h2>Download app</h2>
+          <a href="#">
+            <img src="/img/playstore-btn.png" alt="" />
+          </a>
+          <a href="#">
+            <img src="/img/appStore-btn.png" alt="" />
+          </a>
+        </div>
+      </div>
 
       <!-- popular section -->
       <section class="popular-section">
@@ -300,7 +312,6 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
       <section class="feature-section">
         <div class="container main-flex">
           <div class="feature-container main-flex">
-            <!-- single card -->
             <div
               class="feature-card-container main-flex feature-card1-alingment"
             >
@@ -343,6 +354,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="feature-card-right">
                   <img src="/img/feature-cardImg1.png" alt="" />
                 </div>
+
+                <a class="text-decoration" href="#">
+                  <button class="secondary-btn main-flex">
+                    Become a Mentor now!
+                  </button>
+                </a>
               </div>
             </div>
 
@@ -373,7 +390,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       </div>
                     </div>
 
-                    <a href="#">
+                    <a class="text-decoration" href="#">
                       <button class="secondary-btn main-flex">
                         Get free courses now!
                       </button>
@@ -383,6 +400,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="feature-card-right">
                   <img src="/img/feature-cardImg2.png" alt="" />
                 </div>
+
+                <a class="text-decoration" href="#">
+                  <button class="secondary-btn main-flex">
+                    Get free courses now!
+                  </button>
+                </a>
               </div>
             </div>
 
@@ -413,7 +436,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       </div>
                     </div>
 
-                    <a href="#">
+                    <a class="text-decoration" href="#">
                       <button class="secondary-btn main-flex">
                         Get started now!
                       </button>
@@ -423,6 +446,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="feature-card-right">
                   <img src="/img/feature-cardImg3.png" alt="" />
                 </div>
+
+                <a class="text-decoration" href="#">
+                  <button class="secondary-btn main-flex">
+                    Get started now!
+                  </button>
+                </a>
               </div>
             </div>
 
@@ -449,7 +478,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       </div>
                     </div>
 
-                    <a href="#">
+                    <a class="text-decoration" href="#">
                       <button class="secondary-btn main-flex">
                         Get certified now!
                       </button>
@@ -459,6 +488,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="feature-card-right">
                   <img src="/img/feature-cardImg4.png" alt="" />
                 </div>
+
+                <a class="text-decoration" href="#">
+                  <button class="secondary-btn main-flex">
+                    Get certified now!
+                  </button>
+                </a>
               </div>
             </div>
 
@@ -467,7 +502,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
             >
               <div class="feature-card main-flex">
                 <div class="feature-card-left main-flex">
-                  <h2>Mock Interviews</h2>
+                  <h2>AI-Based Mock Interviews</h2>
                   <p>
                     Series of Mock interviews to reduce your stress before an
                     actual interview.
@@ -489,7 +524,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                       </div>
                     </div>
 
-                    <a href="#">
+                    <a class="text-decoration" href="#">
                       <button class="secondary-btn main-flex">
                         Get certified now!
                       </button>
@@ -499,6 +534,12 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="feature-card-right">
                   <img src="/img/feature-cardImg5.png" alt="" />
                 </div>
+
+                <a class="text-decoration" href="#">
+                  <button class="secondary-btn main-flex">
+                    Get certified now!
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -578,35 +619,51 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                 <div class="earn-section-slider main-flex">
                   <div class="Earn main-flex">
                     <div class="img-section">
-                      <img
-                        class="w-75 h-100"
-                        src="./img/earn-section-rightImg.png"
-                      />
+                      <img src="./img/earn-section-rightImg.png" />
+
+                      <div class="slider-card-info main-flex">
+                        <h3>Create an Optimised Profile</h3>
+                        <p>
+                          After signing up on LIPIJobs, Create a well-optimized
+                          profile and include all required professional work
+                          details to end the employer’s perfect candidate
+                          search.
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <img
-                        class="w-75 h-100"
-                        src="./img/earn-section-rightImg.png"
-                      />
+                    <div class="img-section">
+                      <img src="./img/earn-section-rightImg.png" />
+
+                      <div class="slider-card-info main-flex">
+                        <h3>Grab Employer’s attention</h3>
+                        <p>
+                          Optimize your profile which could attract employers’
+                          eyes, once you can grab their attention , you will
+                          start earning real money and unlimited job offers.
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <img
-                        class="w-75 h-100"
-                        src="./img/earn-section-rightImg.png"
-                      />
+                    <div class="img-section">
+                      <img src="./img/earn-section-rightImg.png" />
+
+                      <div class="slider-card-info main-flex">
+                        <h3>Get Paid on each view</h3>
+                        <p>
+                          Earn money for each profile view and redeem it anytime
+                          from your wallet. An exclusive feature on LIPIJobs for
+                          Jobseekers to earn extra cash for their experience.
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <img
-                        class="w-75 h-100"
-                        src="./img/earn-section-rightImg.png"
-                      />
-                    </div>
-                    <div>
-                      <img
-                        class="w-75 h-100"
-                        id="aman"
-                        src="./img/earn-section-rightImg.png"
-                      />
+                    <div class="img-section">
+                      <img src="./img/earn-section-rightImg.png" />
+                      <div class="slider-card-info main-flex">
+                        <h3>Enjoy Unlimited Job Offers</h3>
+                        <p>
+                          Along with money, you will get unlimited job offers
+                          that might end your search for a dream job!
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -658,7 +715,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         Lipijobs one of the best platform for a job seeker, here
                         we get better and best opportunities with guidance from
                         the management. I think just because they are starting
-                        up so they are really helping everyone personally.
+                        up so they are really helping everyone personally. I
+                        think just because they are starting up so they are
+                        really helping everyone personally.
                       </p>
                     </div>
                   </div>
@@ -713,6 +772,68 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
                         the management. I think just because they are starting
                         up so they are really helping everyone personally.
                       </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="review-section-slider-mobile main-flex">
+                <div class="review-section-slider main-flex">
+                  <div class="reviewSliderMoblie main-flex">
+                    <div class="img-section">
+                      <div class="slider-card-info main-flex">
+                        <h3>Riya Soni</h3>
+                        <img src="./img/rating.png" alt="" />
+                        <p>
+                          Lipijobs one of the best platform for a job seeker,
+                          here we get better and best opportunities with
+                          guidance from the management. I think just because
+                          they are starting up so they are really helping
+                          everyone personally. I think just because they are
+                          starting up so they are really helping everyone
+                          personally.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="img-section">
+                      <div class="slider-card-info main-flex">
+                        <h3>Jyoti Patidar</h3>
+                        <img src="./img/rating.png" alt="" />
+                        <p>
+                          Lipijobs one of the best platform for a job seeker,
+                          here we get better and best opportunities with
+                          guidance from the management. I think just because
+                          they are starting up so they are really helping
+                          everyone personally.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="img-section">
+                      <div class="slider-card-info main-flex">
+                        <h3>Jyoti Patidar</h3>
+                        <img src="./img/rating.png" alt="" />
+                        <p>
+                          Such an amazing platform to learn, to connect, to
+                          achieve goals and to grow. | connected with so many
+                          professionals and learn how to enrich my knowledge to
+                          grow successfully in my career. | highly recommend
+                          anyone to heavily connect on that platform. Make it
+                          become your new Facebook or Instagram.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="img-section">
+                      <div class="slider-card-info main-flex">
+                        <h3>Mukund Singh</h3>
+                        <img src="./img/rating.png" alt="" />
+                        <p>
+                          There are so many features I like about Lipi Jobs. Its
+                          algorithms for finding jobs are just perfect. It is
+                          very easy to create a professional profile for you to
+                          easily get a job. Their mentors are just awesome. They
+                          are professionals in the industry who guide you
+                          through the whole process.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -1089,11 +1210,9 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
         slidesToScroll: 1,
         arrows: false,
         vertical: true,
-
         verticalSwiping: true,
         autoplaySpeed: 5000,
         autoplay: true,
-
         pauseOnHover: false,
         pauseOnFocus: false,
         centerMode: true,
@@ -1160,6 +1279,20 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
     </script>
 
     <script>
+      $(".reviewSliderMoblie").slick({
+        centerMode: true,
+        centerPadding: "0px",
+        autoplay: true,
+        arrows: false,
+        slidesToShow: 1,
+        autoplaySpeed: 3000,
+        pauseOnHover: false,
+        pauseOnFocus: false,
+        dots: true,
+      });
+    </script>
+
+    <script>
       $(document).ready(function () {
         $(".center").slick({
           centerMode: true,
@@ -1168,6 +1301,15 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           autoplay: true,
           slidesToShow: 3,
           responsive: [
+            {
+              breakpoint: 995,
+              settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: "0px",
+                slidesToShow: 2,
+              },
+            },
             {
               breakpoint: 768,
               settings: {
@@ -1199,26 +1341,10 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
           autoplay: true,
           arrows: false,
           slidesToShow: 1,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: "40px",
-                slidesToShow: 1,
-              },
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                arrows: false,
-                centerMode: true,
-                centerPadding: "40px",
-                slidesToShow: 1,
-              },
-            },
-          ],
+          autoplaySpeed: 1500,
+          pauseOnHover: false,
+          pauseOnFocus: false,
+          dots: true,
         });
       });
     </script>
